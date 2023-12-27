@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="EggShipUWP.Orbit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EggShipUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="OrbitGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/SpaceNoise.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="ColonistsTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Colonists" VerticalAlignment="Top" Height="60" Width="500" FontSize="36" TextAlignment="Center" FontFamily="Dubai" Grid.Column="0" Margin="0,20,0,0"/>
+
+        <TextBlock x:Name="RemainingTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Remaining: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="0" Margin="-250,80,0,0"/>
+        <TextBlock x:Name="RemainingInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="0" Margin="250,80,0,0"/>
+
+
+        <TextBlock x:Name="ScannerTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Scanners" VerticalAlignment="Top" Height="60" Width="500" FontSize="36" TextAlignment="Center" FontFamily="Dubai" Grid.Column="1" Margin="0,20,0,0"/>
+
+        <TextBlock x:Name="AtmosphereTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Atmosphere: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="1" Margin="-250,80,0,0"/>
+        <TextBlock x:Name="AtmosphereInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="1" Margin="250,80,0,0"/>
+
+        <TextBlock x:Name="GravityTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Gravity: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="1" Margin="-250,120,0,0"/>
+        <TextBlock x:Name="GravityInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="1" Margin="250,120,0,0"/>
+
+        <TextBlock x:Name="TemperatureTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Temperature: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="1" Margin="-250,160,0,0"/>
+        <TextBlock x:Name="TemperatureInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="1" Margin="250,160,0,0"/>
+
+        <TextBlock x:Name="WaterTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Water: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="1" Margin="-250,200,0,0"/>
+        <TextBlock x:Name="WaterInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="1" Margin="250,200,0,0"/>
+
+        <TextBlock x:Name="MineralsTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Minerals: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="1" Margin="-250,240,0,0"/>
+        <TextBlock x:Name="MineralsInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="1" Margin="250,240,0,0"/>
+
+
+        <TextBlock x:Name="SystemTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Systems" VerticalAlignment="Top" Height="60" Width="500" FontSize="36" TextAlignment="Center" FontFamily="Dubai" Grid.Column="2" Grid.Row="0" Margin="0,20,0,0"/>
+
+        <TextBlock x:Name="LandingTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Landing: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="2" Margin="-250,80,0,0"/>
+        <TextBlock x:Name="LandingInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="2" Margin="250,80,0,0"/>
+
+        <TextBlock x:Name="ConstructionTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Construction: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="2" Margin="-250,120,0,0"/>
+        <TextBlock x:Name="ConstructionInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="2" Margin="250,120,0,0"/>
+
+
+        <TextBlock x:Name="DatabaseTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Databases" VerticalAlignment="Top" Height="60" Width="500" FontSize="36" TextAlignment="Center" FontFamily="Dubai" Grid.Column="2" Grid.Row="0" Margin="0,160,0,0"/>
+
+        <TextBlock x:Name="ScientificTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Scientific: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="2" Margin="-250,220,0,0"/>
+        <TextBlock x:Name="ScientificInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="2" Margin="250,220,0,0"/>
+
+        <TextBlock x:Name="CulturalTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Cultural: " VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Left" FontFamily="Dubai" Grid.Column="2" Margin="-250,260,0,0"/>
+        <TextBlock x:Name="CulturalInfoTxt" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Offline" VerticalAlignment="Top" Height="40" Width="250" FontSize="24" TextAlignment="Right" FontFamily="Dubai" Grid.Column="2" Margin="250,260,0,0"/>
+        <Button x:Name="RebootBtn" Content="REBOOT" Margin="0,220,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="60" Width="150" FontSize="22" Click="RebootPressed"/>
+
+    </Grid>
+</Page>
